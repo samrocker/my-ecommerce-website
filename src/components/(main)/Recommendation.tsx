@@ -35,22 +35,22 @@ const Recommendation = (props: PropType) => {
               </span>
             </h1>
           </div>
-          <div className="flex-[3]">
+          <div className="flex-[3] w-full">
             <Carousel
-            className="max-w-[1380px] m-auto"
+            className="max-w-[1380px] m-auto w-full"
               opts={{
                 align: "start",
                 loop: true,
               }}
             >
               <CarouselContent>
-                <CarouselItem className="h-full w-full basis-1/1 md:basis-1/3 lg:basis-1/4">
-                  <div className="h-[450px] w-[300px] flex-between flex-col rounded-3xl">
+                <CarouselItem className="flex-center md:basis-1/3 lg:basis-1/4">
+                  <div className="h-[450px] w-[300px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
                     <div className="flex-[1] w-full flex-center">
                       <Image
                         src={ProductImage}
                         alt=""
-                        className="h-full object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     <div className="flex-[1] w-full flex-between">
@@ -80,13 +80,13 @@ const Recommendation = (props: PropType) => {
                     </div>
                   </div>
                 </CarouselItem>
-                <CarouselItem className="h-full w-full basis-1/1 md:basis-1/3 lg:basis-1/4">
-                  <div className="h-[450px] w-[300px] flex-between flex-col rounded-3xl">
+                <CarouselItem className="flex-center md:basis-1/3 lg:basis-1/4">
+                  <div className="h-[450px] w-[300px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
                     <div className="flex-[1] w-full flex-center">
-                      <Image
+                      <Image  
                         src={ProductImage}
                         alt=""
-                        className="h-full object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     <div className="flex-[1] w-full flex-between">
@@ -116,13 +116,13 @@ const Recommendation = (props: PropType) => {
                     </div>
                   </div>
                 </CarouselItem>
-                <CarouselItem className="h-full w-full basis-1/1 md:basis-1/3 lg:basis-1/4">
-                  <div className="h-[450px] w-[300px] flex-between flex-col rounded-3xl">
+                <CarouselItem className="flex-center md:basis-1/3 lg:basis-1/4">
+                  <div className="h-[450px] w-[300px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
                     <div className="flex-[1] w-full flex-center">
                       <Image
                         src={ProductImage}
                         alt=""
-                        className="h-full object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     <div className="flex-[1] w-full flex-between">
@@ -152,13 +152,13 @@ const Recommendation = (props: PropType) => {
                     </div>
                   </div>
                 </CarouselItem>
-                <CarouselItem className="h-full w-full basis-1/1 md:basis-1/3 lg:basis-1/4">
-                  <div className="h-[450px] w-[300px] flex-between flex-col rounded-3xl">
+                <CarouselItem className="flex-center md:basis-1/3 lg:basis-1/4">
+                  <div className="h-[450px] w-[300px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
                     <div className="flex-[1] w-full flex-center">
                       <Image
                         src={ProductImage}
                         alt=""
-                        className="h-full object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     <div className="flex-[1] w-full flex-between">
@@ -188,13 +188,13 @@ const Recommendation = (props: PropType) => {
                     </div>
                   </div>
                 </CarouselItem>
-                <CarouselItem className="h-full w-full basis-1/1 md:basis-1/3 lg:basis-1/4">
-                  <div className="h-[450px] w-[300px] flex-between flex-col rounded-3xl">
+                <CarouselItem className="flex-center md:basis-1/3 lg:basis-1/4">
+                  <div className="h-[450px] w-[300px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
                     <div className="flex-[1] w-full flex-center">
                       <Image
                         src={ProductImage}
                         alt=""
-                        className="h-full object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     <div className="flex-[1] w-full flex-between">
@@ -224,13 +224,13 @@ const Recommendation = (props: PropType) => {
                     </div>
                   </div>
                 </CarouselItem>
-                <CarouselItem className="h-full w-full basis-1/1 md:basis-1/3 lg:basis-1/4">
-                  <div className="h-[450px] w-[300px] flex-between flex-col rounded-3xl">
+                <CarouselItem className="flex-center md:basis-1/3 lg:basis-1/4">
+                  <div className="h-[450px] w-[300px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
                     <div className="flex-[1] w-full flex-center">
                       <Image
                         src={ProductImage}
                         alt=""
-                        className="h-full object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     <div className="flex-[1] w-full flex-between">
@@ -260,13 +260,13 @@ const Recommendation = (props: PropType) => {
                     </div>
                   </div>
                 </CarouselItem>
-                <CarouselItem className="h-full w-full basis-1/1 md:basis-1/3 lg:basis-1/4">
-                  <div className="h-[450px] w-[300px] flex-between flex-col rounded-3xl">
+                <CarouselItem className="flex-center md:basis-1/3 lg:basis-1/4">
+                  <div className="h-[450px] w-[300px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
                     <div className="flex-[1] w-full flex-center">
                       <Image
                         src={ProductImage}
                         alt=""
-                        className="h-full object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     <div className="flex-[1] w-full flex-between">
