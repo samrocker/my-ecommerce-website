@@ -18,7 +18,7 @@ type PropType = {
   options?: EmblaOptionsType;
 };
 
-const Recommendation = (props: PropType) => {
+const BestSeller = (props: PropType) => {
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
@@ -28,10 +28,10 @@ const Recommendation = (props: PropType) => {
       <main className="max-w-[1380px] m-auto">
         <div className="h-screen w-full flex-between flex-col">
           <div className="flex-[0.5] w-full flex-start px-3">
-            <h1 className="text-2xl font-bold flex gap-1">
-              Recommendations <span className="hidden md:flex">.</span>
+            <h1 className="text-2xl font-bold flex gap-1 p-4">
+              Best Sellers <span className="hidden md:flex">.</span>
               <span className="text-[#4B5563] hidden md:flex">
-              Best selling of the month
+                Best matching products for you
               </span>
             </h1>
           </div>
@@ -573,4 +573,4 @@ const Recommendation = (props: PropType) => {
   );
 };
 
-export default Recommendation;
+export default BestSeller;

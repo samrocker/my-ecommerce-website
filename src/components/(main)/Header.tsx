@@ -13,6 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Header = () => {
   return (
@@ -44,22 +45,19 @@ const Header = () => {
               />
             </form>
           </div>
-          <div className="flex-[1] hidden lg:flex-center gap-5">
+          <div className="flex-[1] hidden lg:flex-end gap-5 px-5">
             <Link href="" className="flex-center gap-5">
-              <Image
-                src={Usericon}
-                alt=""
-                height={20}
-                width={20}
-                className="object-cover"
-              />
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
             </Link>
             <Link href="">
               <Image
                 src={CartIcon}
                 alt=""
-                height={20}
-                width={20}
+                height={25}
+                width={25}
                 className="object-cover"
               />
             </Link>

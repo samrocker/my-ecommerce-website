@@ -235,7 +235,7 @@ const Hero = (props: PropType) => {
               </CarouselContent>
             </Carousel>
           </div>
-          <div className="flex-[0.5] w-full md:flex-[0.9] hidden md:flex-between flex-col">
+          <div className="flex-[0.5] w-full md:flex-[0.9] hidden lg:flex-between flex-col">
             <div className="flex-[0.5] w-full flex items-center justify-start px-3">
               <h1 className="text-2xl font-bold">
                 Start exploring.
@@ -289,7 +289,7 @@ const Hero = (props: PropType) => {
               </div>
             </div>
           </div>
-          <div className="flex-[0.5] w-full md:flex-[0.9] md:hidden flex-between flex-col">
+          <div className="flex-[0.5] w-full md:flex-[0.9] lg:hidden flex-between flex-col">
             <div className="flex-[0.5] w-full flex items-center justify-start px-3">
               <h1 className="text-2xl font-bold">Start exploring.</h1>
             </div>
