@@ -35,7 +35,7 @@ const BestSeller = (props: PropType) => {
               </span>
             </h1>
           </div>
-          <div className="flex-[1] w-full p-5">
+          <div className="flex-[1] w-full p-2">
             <Carousel
               className="max-w-[1380px] m-auto w-full"
               opts={{
@@ -301,7 +301,7 @@ const BestSeller = (props: PropType) => {
               <CarouselNext className="absolute right-1" />
             </Carousel>
           </div>
-          <div className="flex-[1] w-full p-5">
+          <div className="flex-[1] w-full p-2">
             <Carousel
               className="max-w-[1380px] m-auto w-full"
               opts={{

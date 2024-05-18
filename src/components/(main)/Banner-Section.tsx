@@ -7,7 +7,7 @@ const BannerSection = () => {
     <section className="hidden md:flex">
       <main className="max-w-[1380px] m-auto">
         <div className="h-screen w-full flex-center">
-          <div className="h-[20rem] lg:h-[25rem] w-[54rem] lg:w-[75rem] relative">
+          <div className="h-[20rem] lg:h-[25rem] w-[54rem] lg:w-[65rem] relative">
             <Image
               src={bannerImage}
               alt=""
