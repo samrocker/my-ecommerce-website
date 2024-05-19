@@ -72,6 +72,14 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent>
                 <div className="h-screen flex flex-col gap-5 items-start justify-center">
+                  <Link href="" className="flex-center gap-5">
+                    <SignedOut>
+                      <SignInButton />
+                    </SignedOut>
+                    <SignedIn>
+                      <UserButton />
+                    </SignedIn>
+                  </Link>
                   <Link
                     href=""
                     className="text-3xl text-left font-medium hover:text-blue-500 hover:animate-wiggle transition duration-300"
