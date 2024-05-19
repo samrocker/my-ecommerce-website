@@ -14,6 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 const Header = () => {
   return (
@@ -47,10 +48,12 @@ const Header = () => {
           </div>
           <div className="flex-[1] hidden lg:flex-end gap-5 px-5">
             <Link href="" className="flex-center gap-5">
-              <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
+              <SignedOut>
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
             </Link>
             <Link href="">
               <Image
