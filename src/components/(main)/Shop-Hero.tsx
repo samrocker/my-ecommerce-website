@@ -9,7 +9,7 @@ const ShopHero = () => {
   return (
     <section>
       <main className="max-w-[86.25rem] m-auto">
-        <div className="h-screen w-full flex flex-between lg:flex-row ">
+        <div className="md:h-screen w-full flex flex-between lg:flex-row ">
           <div className="flex-[1] hidden lg:flex-between flex-col gap-10 py-5">
             <div className="flex-[1] flex-between flex-col gap-3">
               <h1 className="text-xl">Categories</h1>
@@ -29,7 +29,7 @@ const ShopHero = () => {
             <div className="flex-[1] flex-start flex-col gap-3"></div>
             <div className="flex-[1] flex-between flex-col gap-3"></div>
           </div>
-          <div className="flex-[3] grid grid-cols-1 md:grid-cols-3 gap-5 lg:justify-start justify-center p-5">
+          <div className="flex-[3] grid grid-cols-1 items-center place-content-center md:grid-cols-3 gap-5 lg:justify-start justify-center p-5">
             <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
               <div className="flex-[1] w-full flex-center">
                 <Image
