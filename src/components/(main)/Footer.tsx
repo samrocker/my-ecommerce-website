@@ -10,70 +10,54 @@ const Footer = () => {
   return (
     <section className="bg-black/5 w-full">
       <main className="max-w-[1380px] m-auto">
-        <div className="h-screen lg:h-[40vh] px-5 w-full flex-between flex-col lg:flex-row py-5 gap-10">
-          <div className="flex-[1] w-full flex flex-col items-start justify-center gap-10 md:gap-5">
-            <Image src={Logo} alt="" className="w-[7rem]" />
-            <h1 className="text-md font-normal flex gap-1">
-              <Image
-                src={FacebookLogo}
-                alt=""
-                height={25}
-                width={25}
-                className="object-cover"
-              />
-              Facebook
-            </h1>
-            <h1 className="text-md font-normal flex gap-1">
-              <Image
-                src={YoutubeLogo}
-                alt=""
-                height={25}
-                width={25}
-                className="object-cover"
-              />
-              Youtube
-            </h1>
-            <h1 className="text-md font-normal flex gap-1">
-              <Image
-                src={InstagramLogo}
-                alt=""
-                height={25}
-                width={25}
-                className="object-cover"
-              />
-              Instagram
-            </h1>
-            <h1 className="text-md font-normal flex gap-1">
-              <Image
-                src={TwitterLogo}
-                alt=""
-                height={25}
-                width={25}
-                className="object-cover"
-              />
-              Twiter
-            </h1>
+        <div className="px-5 py-10 w-full flex flex-col lg:flex-row gap-10 lg:gap-5">
+          <div className="flex-1 flex flex-col items-start justify-center gap-5">
+            <Image src={Logo} alt="Logo" className="w-[7rem]" />
+            <div className="flex flex-col gap-3">
+              <a href="#" className="flex items-center gap-2 text-md font-normal">
+                <Image src={FacebookLogo} alt="Facebook" height={25} width={25} className="object-cover" />
+                Facebook
+              </a>
+              <a href="#" className="flex items-center gap-2 text-md font-normal">
+                <Image src={YoutubeLogo} alt="Youtube" height={25} width={25} className="object-cover" />
+                Youtube
+              </a>
+              <a href="#" className="flex items-center gap-2 text-md font-normal">
+                <Image src={InstagramLogo} alt="Instagram" height={25} width={25} className="object-cover" />
+                Instagram
+              </a>
+              <a href="#" className="flex items-center gap-2 text-md font-normal">
+                <Image src={TwitterLogo} alt="Twitter" height={25} width={25} className="object-cover" />
+                Twitter
+              </a>
+            </div>
           </div>
-          <div className="flex-[1] w-full flex flex-col items-start justify-center gap-10 md:gap-5">
+          <div className="flex-1 flex flex-col items-start justify-center gap-5">
             <h1 className="text-md font-bold">Get Started</h1>
-            <h1 className="text-md font-normal">Release Notes</h1>
-            <h1 className="text-md font-normal">Upgrade Guide</h1>
-            <h1 className="text-md font-normal">Browser Support</h1>
-            <h1 className="text-md font-normal">Dark Mode</h1>
+            <ul className="flex flex-col gap-3">
+              <li className="text-md font-normal">Release Notes</li>
+              <li className="text-md font-normal">Upgrade Guide</li>
+              <li className="text-md font-normal">Browser Support</li>
+              <li className="text-md font-normal">Dark Mode</li>
+            </ul>
           </div>
-          <div className="flex-[1] w-full flex flex-col items-start justify-center gap-10 md:gap-5">
+          <div className="flex-1 flex flex-col items-start justify-center gap-5">
             <h1 className="text-md font-bold">Explore</h1>
-            <h1 className="text-md font-normal">Prototyping</h1>
-            <h1 className="text-md font-normal">Design systems</h1>
-            <h1 className="text-md font-normal">Pricing</h1>
-            <h1 className="text-md font-normal">Security</h1>
+            <ul className="flex flex-col gap-3">
+              <li className="text-md font-normal">Prototyping</li>
+              <li className="text-md font-normal">Design Systems</li>
+              <li className="text-md font-normal">Pricing</li>
+              <li className="text-md font-normal">Security</li>
+            </ul>
           </div>
-          <div className="flex-[1] w-full flex flex-col items-start justify-center gap-10 md:gap-5">
+          <div className="flex-1 flex flex-col items-start justify-center gap-5">
             <h1 className="text-md font-bold">Community</h1>
-            <h1 className="text-md font-normal">Discussion Forums   </h1>
-            <h1 className="text-md font-normal">Upgrade Guide</h1>
-            <h1 className="text-md font-normal">Browser Support</h1>
-            <h1 className="text-md font-normal">Dark Mode</h1>
+            <ul className="flex flex-col gap-3">
+              <li className="text-md font-normal">Discussion Forums</li>
+              <li className="text-md font-normal">Upgrade Guide</li>
+              <li className="text-md font-normal">Browser Support</li>
+              <li className="text-md font-normal">Dark Mode</li>
+            </ul>
           </div>
         </div>
       </main>

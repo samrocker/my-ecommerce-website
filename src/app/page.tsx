@@ -13,9 +13,9 @@ export default function Home() {
     <Hero />
     <Recommendation />
     <BestSeller />
-    <BannerSection />
+    {/* <BannerSection /> */}
     <Footer />
-    <FooterMobile />
+    {/* <FooterMobile /> */}
     </>
   );
 }
