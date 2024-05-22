@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <section className="bg-black/5 w-full">
       <main className="max-w-[1380px] m-auto">
-        <div className="px-5 py-10 w-full flex flex-col lg:flex-row gap-10 lg:gap-5">
+        <div className="px-5 py-10 w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div className="flex-1 flex flex-col items-start justify-center gap-5">
             <Image src={Logo} alt="Logo" className="w-[7rem]" />
             <div className="flex flex-col gap-3">

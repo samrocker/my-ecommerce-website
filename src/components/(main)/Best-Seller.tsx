@@ -26,16 +26,16 @@ const BestSeller = (props: PropType) => {
   return (
     <section>
       <main className="max-w-[1380px] m-auto">
-        <div className="h-screen w-full flex-between flex-col">
+        <div className="w-full flex-between flex-col py-10">
           <div className="flex-[0.5] w-full flex-start px-3">
-            <h1 className="text-2xl font-bold flex gap-1 p-4">
+            <h1 className="text-2xl font-bold flex gap-1 py-5">
               Best Sellers <span className="hidden md:flex">.</span>
               <span className="text-[#4B5563] hidden md:flex">
                 Best matching products for you
               </span>
             </h1>
           </div>
-          <div className="flex-[1] w-full p-2">
+          <div className="flex-[1] w-full py-10">
             <Carousel
               className="max-w-[1380px] m-auto w-full"
               opts={{
@@ -301,7 +301,7 @@ const BestSeller = (props: PropType) => {
               <CarouselNext className="absolute right-1" />
             </Carousel>
           </div>
-          <div className="flex-[1] w-full p-2">
+          <div className="flex-[1] w-full py-5">
             <Carousel
               className="max-w-[1380px] m-auto w-full"
               opts={{

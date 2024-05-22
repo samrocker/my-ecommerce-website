@@ -2,9 +2,7 @@ import Header from "@/components/(main)/Header";
 import Hero from "@/components/(main)/Hero";
 import Recommendation from "@/components/(main)/Recommendation";
 import BestSeller from "@/components/(main)/Best-Seller";
-import BannerSection from "@/components/(main)/Banner-Section";
-import Footer from "@/components/(main)/Footer";
-import FooterMobile from "@/components/(main)/FooterMobile";
+import Footer from "@/components/(main)/Footer";  
 
 export default function Home() {
   return (
@@ -13,9 +11,7 @@ export default function Home() {
     <Hero />
     <Recommendation />
     <BestSeller />
-    {/* <BannerSection /> */}
     <Footer />
-    {/* <FooterMobile /> */}
     </>
   );
 }
