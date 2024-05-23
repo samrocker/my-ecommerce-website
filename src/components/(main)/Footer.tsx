@@ -8,11 +8,11 @@ import TwitterLogo from "../../../public/twitter-logo.png";
 
 const Footer = () => {
   return (
-    <section className="bg-black/5 w-full">
+    <section className=" w-full">
       <main className="max-w-[1380px] m-auto">
         <div className="px-5 py-10 w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div className="flex-1 flex flex-col items-start justify-center gap-5">
-            <Image src={Logo} alt="Logo" className="w-[7rem]" />
+            <Image src={Logo} alt="Logo" className="w-[6rem]" />
             <div className="flex flex-col gap-3">
               <a href="#" className="flex items-center gap-2 text-md font-normal">
                 <Image src={FacebookLogo} alt="Facebook" height={25} width={25} className="object-cover" />

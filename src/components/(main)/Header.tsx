@@ -18,7 +18,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 const Header = () => {
   return (
-    <section>
+    <section className="w-full shadow-lg"> 
       <main className="max-w-[1380px] m-auto">
         <div className="h-20 w-full flex-between">
           <div className="flex-[1] flex-start px-3">

@@ -8,11 +8,35 @@ import { Slider } from "@/components/ui/slider"
 
 
 const ShopHero = () => {
+
+  async function Apidata() {
+    try {
+      const response = await fetch("'https://fakestoreapi.com/products/1")
+      if (!response.ok) {
+        throw new Error("Could not fetch resource");
+        const Data = response
+        const data = await response.json();
+        const ProductName = data.title;
+        const nameElement = document.getElementById("ProductName");
+        const productThumbnail = data.thumbnail;
+        const imgElement = document.getElementById("ProductThumbnail");   
+
+          nameElement.textContent = ProductName;
+          // Set the src attribute of the img element
+          imgElement = productThumbnail;
+
+    }
+    }
+    catch(error){
+      console.log(error)
+    }
+    
+  }
   return (
     <section>
-      <main className="max-w-[86.25rem] m-auto">
+      <main className="max-w-[1380px] m-auto">
         <div className="w-full flex flex-between lg:flex-row">
-          <div className="flex-[1] hidden lg:flex-start flex-col gap-10 py-5">
+          <div className="flex-[1] hidden lg:flex-start flex-col gap-10">
             <div className=" flex-[1] w-full flex-between flex-col gap-3">
               <h1 className="text-xl font-bold">Categories</h1>
               <div className="flex-start w-full gap-3">
@@ -39,7 +63,7 @@ const ShopHero = () => {
             <div className="flex-[1] flex-between flex-col gap-3"></div>
           </div>
           <div className="flex-[3] grid grid-cols-1 md:grid-cols-3 gap-10 lg:justify-start justify-center">
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -64,7 +88,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -89,7 +113,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -114,7 +138,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -139,7 +163,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -164,7 +188,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -189,7 +213,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -214,7 +238,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -239,7 +263,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -264,7 +288,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -289,7 +313,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}
@@ -314,7 +338,7 @@ const ShopHero = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1">
+            <div className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
               <div className="flex-[1] w-full flex-center">
                 <Image
                   src={ProductImage}

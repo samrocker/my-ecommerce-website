@@ -35,7 +35,7 @@ const Hero = (props: PropType) => {
           <div className="hidden md:flex-[1] w-full md:flex-start flex-col">
             <Carousel>
               <CarouselContent className="h-full w-full">
-                <CarouselItem>
+                <CarouselItem className="shadow-md py-2">
                   <Image
                     src={SliderImage1}
                     alt=""
@@ -88,7 +88,7 @@ const Hero = (props: PropType) => {
               </span>
             </div>
           </div>
-          <div className="flex-[0.5] w-full hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center">
+          <div className="flex-[0.7] w-full hidden md:grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 items-center justify-center">
             <div className="h-[80px] w-[330px] flex-between border-[1px] border-black/20 rounded-3xl px-5">
               <div className="flex-[1] flex-start">
                 <Image
