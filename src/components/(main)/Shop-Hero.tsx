@@ -31,7 +31,7 @@ const ShopHero = () => {
   //     console.log(error)
   //   }
     
-  }
+  // }
   return (
     <section>
       <main className="max-w-[1380px] m-auto">
