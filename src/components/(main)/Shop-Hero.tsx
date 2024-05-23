@@ -9,27 +9,27 @@ import { Slider } from "@/components/ui/slider"
 
 const ShopHero = () => {
 
-  async function Apidata() {
-    try {
-      const response = await fetch("'https://fakestoreapi.com/products/1")
-      if (!response.ok) {
-        throw new Error("Could not fetch resource");
-        const Data = response
-        const data = await response.json();
-        const ProductName = data.title;
-        const nameElement = document.getElementById("ProductName");
-        const productThumbnail = data.thumbnail;
-        const imgElement = document.getElementById("ProductThumbnail");   
+  // async function Apidata() {
+  //   try {
+  //     const response = await fetch("'https://fakestoreapi.com/products/1")
+  //     if (!response.ok) {
+  //       throw new Error("Could not fetch resource");
+  //       const Data = response
+  //       const data = await response.json();
+  //       const ProductName = data.title;
+  //       const nameElement = document.getElementById("ProductName");
+  //       const productThumbnail = data.thumbnail;
+  //       const imgElement = document.getElementById("ProductThumbnail");   
 
-          nameElement.textContent = ProductName;
-          // Set the src attribute of the img element
-          imgElement = productThumbnail;
+  //         nameElement.textContent = ProductName;
+  //         // Set the src attribute of the img element
+  //         imgElement = productThumbnail;
 
-    }
-    }
-    catch(error){
-      console.log(error)
-    }
+  //   }
+  //   }
+  //   catch(error){
+  //     console.log(error)
+  //   }
     
   }
   return (
