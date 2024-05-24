@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #HeroSlider {
-  background-image: url("https://cdn.discordapp.com/attachments/1201226826924699748/1241285215771430963/Slider-Image1.png?ex=6649a471&is=664852f1&hm=fc76e7eab02fd4c72b3d1dd27e8f13c14ae06d43f009139587ab785e5f5c9046&");
+  background-image: url("https://cdn.discordapp.com/attachments/1201226826924699748/1241285215771430963/Slider-Image1.png?ex=66523631&is=6650e4b1&hm=1f968b33ee729f766252062891e78ed6841f4fc12d97518145a989a25a6cbd3b&");
   background-size: cover;
   background-position: left;
 }

@@ -37,12 +37,12 @@ const Header = () => {
               className="object-cover md:hidden flex"
             />
           </div>
-          <div className="flex-[1] flex-center">
+          <div className="flex-[0.5] md:flex-[1] flex-center">
             <form action="/">
               <input
                 type="text"
                 placeholder="Search for any products"
-                className="flex-[1] flex-start px-3 md:px-20 py-2 bg-black/10 rounded-3xl placeholder:text-black/50"
+                className="w-[13rem] md:w-full flex items-center justify-start px-3 md:px-20 py-2 bg-black/10 rounded-3xl placeholder:text-sm placeholder:text-black/50"
               />
             </form>
           </div>
@@ -81,13 +81,13 @@ const Header = () => {
                     </SignedIn>
                   </Link>
                   <Link
-                    href=""
+                    href="/"
                     className="text-3xl text-left font-medium hover:text-blue-500 hover:animate-wiggle transition duration-300"
                   >
                     Home
                   </Link>
                   <Link
-                    href=""
+                    href="/shop"
                     className="text-3xl text-left font-medium hover:text-blue-500 hover:animate-wiggle transition duration-300"
                   >
                     Shop
@@ -99,13 +99,13 @@ const Header = () => {
                     New Arrivals
                   </Link>
                   <Link
-                    href=""
+                    href="/" 
                     className="text-3xl text-left font-medium hover:text-blue-500 hover:animate-wiggle transition duration-300"
                   >
                     Sale
                   </Link>
                   <Link
-                    href=""
+                    href="/"
                     className="text-3xl text-left font-medium hover:text-blue-500 hover:animate-wiggle transition duration-300"
                   >
                     About Us
