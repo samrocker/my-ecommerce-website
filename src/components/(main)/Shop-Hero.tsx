@@ -48,12 +48,9 @@ const ShopHero: React.FC = () => {
     fetchProducts();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
-
   return (
     <section>
-      <main className="max-w-[1536px] mx-auto p-4">
+      <main className="max-w-[1536px] mx-auto p-5">
         <div className="w-full flex flex-col lg:flex-row">
           <aside className="flex-[0.8] hidden lg:flex flex-col gap-10 py-10">
             <div className="flex flex-col gap-3 sticky top-10">
@@ -129,8 +126,8 @@ const ShopHero: React.FC = () => {
           <div className="flex-[3] flex justify-center lg:justify-start">
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-10">
               {products.map((product, index) => (
-                <div key={index} className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-1 shadow-lg">
-                  <div className="flex-[1] w-full flex-center">
+                <div key={index} className="h-[26.25rem] md:h-[24rem] w-[17.5rem] md:w-[16rem] flex-between flex-col border-[1px] border-[#000]/20 rounded-3xl p-2">
+                  <div className="flex-[1] w-full flex-center bg-[#ddd]/50 rounded-xl">
                     <Image
                       src={product.thumbnail || ProductImage}
                       alt={product.title}
@@ -141,7 +138,7 @@ const ShopHero: React.FC = () => {
                   </div>
                   <div className="flex-[1] w-full flex-between">
                     <div className="flex-[2] flex flex-col gap-2 px-3 text-left items-start justify-center">
-                      <h1 className="text-sm font-bold">{product.title}</h1>
+                      <h1 className="text-md font-bold">{product.title}</h1>
                       <p className="text-[#4B5563] text-sm font-medium">
                         {product.category}
                       </p>

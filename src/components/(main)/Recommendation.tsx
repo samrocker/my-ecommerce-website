@@ -70,7 +70,7 @@ const BestSeller: React.FC = () => {
                     key={product.id}
                     className="flex-center md:basis-1/3 lg:basis-1/4"
                   >
-                    <div className="h-[420px] w-[280px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-2 shadow-xl">
+                    <div className="h-[420px] w-[280px] flex-between flex-col border-[1px] border-[#4b55633f] rounded-3xl p-2">
                       <div className="flex-[1] w-full flex-center bg-[#ddd]/30 rounded-xl">
                         <Image
                           src={product.thumbnail}

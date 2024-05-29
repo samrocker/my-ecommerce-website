@@ -18,7 +18,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 const Header = () => {
   return (
-    <section className="w-full shadow-lg"> 
+    <section className="w-full shadow-lg">
       <main className="max-w-[1380px] m-auto">
         <div className="h-20 w-full flex-between">
           <div className="flex-[1] flex-start px-3">
@@ -55,15 +55,19 @@ const Header = () => {
                 <UserButton />
               </SignedIn>
             </Link>
-            <Link href="">
-              <Image
-                src={CartIcon}
-                alt=""
-                height={25}
-                width={25}
-                className="object-cover"
-              />
-            </Link>
+            <Sheet>
+              <SheetTrigger>
+                <Image
+                  src={CartIcon}
+                  alt=""
+                  height={25}
+                  width={25}
+                  className="object-cover"
+                />
+              </SheetTrigger>
+              <SheetContent>
+              </SheetContent>
+            </Sheet>
           </div>
           <div className="flex-[1] flex-end px-3 lg:hidden">
             <Sheet>
@@ -99,7 +103,7 @@ const Header = () => {
                     New Arrivals
                   </Link>
                   <Link
-                    href="/" 
+                    href="/"
                     className="text-3xl text-left font-medium hover:text-blue-500 hover:animate-wiggle transition duration-300"
                   >
                     Sale
